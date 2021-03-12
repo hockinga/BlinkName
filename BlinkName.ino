@@ -85,10 +85,10 @@ void blink_code(int led, String code) {
     for (int i = 0; i < len; i++) {
 
         if (code[i] == '.') {
-            // Blink a dash
+            // Blink a dot
             blink(led, UNIT_TIME);
         } else if (code[i] == '-') {
-            // Blink a dot
+            // Blink a dash
             blink(led, 3 * UNIT_TIME);
         }
     }
